@@ -23,6 +23,7 @@ if isValid:
     in_file = open(input_file)
     indata = in_file.read()
 
+    indata = indata.replace('-', ' ')
     # Split indata string on all white space. 
     indata_splitted = indata.split()
     # print indata_splitted
@@ -32,7 +33,7 @@ if isValid:
 
     for word in indata_splitted:
         # remove punctuation
-        word = word.strip(".?,!-'\";_:()")
+        word = word.strip(".?,!-'\";_:()*[]")
         # remove capitalization 
         word = word.lower()
         if dictionary.get(word) == None:
