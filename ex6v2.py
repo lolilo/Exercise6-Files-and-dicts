@@ -51,8 +51,8 @@ if isValid:
 
     # print dictionary2
     # print "sorted", dictionary2.keys()[::-1]
-
-    for frequency in dictionary2.keys()[::-1]:
+    values = sorted(dictionary2.keys())
+    for frequency in values[::-1]:
         dictionary2[frequency].sort()
         for word in dictionary2[frequency]:
             print word, frequency
