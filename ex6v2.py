@@ -32,7 +32,7 @@ if isValid:
 
     for word in indata_splitted:
         # remove punctuation
-        word = word.strip(".?,!")
+        word = word.strip(".?,!-'\";_:()")
         # remove capitalization 
         word = word.lower()
         if dictionary.get(word) == None:
@@ -44,7 +44,7 @@ if isValid:
     dictionary2 = {}
 
     for word,frequency in dictionary.items():
-        if dictionary2.get(frequency, None) == None:
+        if dictionary2.get(frequency) == None:
             dictionary2[frequency] = [word]
         else:
             dictionary2[frequency].append(word)
