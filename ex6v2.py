@@ -35,7 +35,7 @@ if isValid:
         word = word.strip(".?,!")
         # remove capitalization 
         word = word.lower()
-        if dictionary.get(word, None) == None:
+        if dictionary.get(word) == None:
             dictionary[word] = 1
         else:
             dictionary[word] += 1

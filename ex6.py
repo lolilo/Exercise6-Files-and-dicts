@@ -45,12 +45,12 @@ if isValid:
         word = word.strip(".?,!")
         # remove capitalization 
         word = word.lower()
-        if dictionary.get(word, None) == None:
+        if dictionary.get(word) == None:
             dictionary[word] = 1
         else:
             dictionary[word] += 1
 
-    
+
 
     # Sort the output from the highest frequency words to the lowest frequency words.
     dictionary_frequency_sorted = sorted(dictionary.iteritems(), 
