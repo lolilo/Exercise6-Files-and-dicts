@@ -7,7 +7,7 @@ from sys import argv
 from os.path import exists
 
 # For sorting the dictionary
-import operator
+# import operator
 
 # Takes in Python script and one file as arguments. 
 script, input_file = argv
@@ -62,3 +62,6 @@ if isValid:
     #     print values,keys
     # print dictionary2.items()
 
+
+
+    # Look up how to use sorted to sort by value and then key.

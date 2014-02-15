@@ -9,7 +9,7 @@ states = {
     }
 
 
-# s = sorted(states.iteritems(), key = operator.itemgetter(1))
+ s = sorted(states.iteritems(), key = operator.itemgetter(1))
 
 # print s
 # print s[::-1]
